@@ -1,0 +1,22 @@
+
+x
+java:S1104"bMake informacion_ingresados a static final constant or non-public and provide accessors if needed.(èþ«œ
+x
+java:S1104"]Make informacion_table a static final constant or non-public and provide accessors if needed.(±³‰œþÿÿÿÿ
+R
+java:S1444"<Make this "public static informacion_ingresados" field final(èþ«œ
+R
+java:S1444"7Make this "public static informacion_table" field final(±³‰œþÿÿÿÿ
+w
+java:S3008"aRename this field "informacion_ingresados" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èþ«œ
+w
+java:S3008"\Rename this field "informacion_table" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±³‰œþÿÿÿÿ
+3
+java:S2386"Make this member "protected".(èþ«œ
+8
+java:S2386"Make this member "protected".(±³‰œþÿÿÿÿ
+h	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ð¿¡õûÿÿÿÿ
+’
+java:S1130<"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(Ð¿¡õûÿÿÿÿ
+N	java:S106]"9Replace this use of System.out or System.err by a logger.(î¹¼•
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(¡¨Þýÿÿÿÿ
