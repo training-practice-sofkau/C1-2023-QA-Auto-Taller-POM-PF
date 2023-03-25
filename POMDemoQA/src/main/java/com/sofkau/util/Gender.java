@@ -1,0 +1,13 @@
+package com.sofkau.util;
+
+public enum Gender {
+    MALE("Male"),
+    FEMALE ("Female"),
+    OTHER ("Other");
+
+    private final String value;
+    public String getValues(){return value; }
+
+    Gender(String value){this.value = value;}
+
+}

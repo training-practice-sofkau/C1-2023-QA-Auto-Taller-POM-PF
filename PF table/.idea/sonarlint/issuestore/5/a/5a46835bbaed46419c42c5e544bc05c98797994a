@@ -1,0 +1,18 @@
+
+„
+java:S1319"iThe type of "esperados" should be an interface such as "List" rather than the implementation "ArrayList".(Ú¾›Ôûÿÿÿÿ
+~
+java:S1319"iThe type of "obtenidos" should be an interface such as "List" rather than the implementation "ArrayList".(“ãé
+p
+java:S1104"UMake esperados a static final constant or non-public and provide accessors if needed.(Ú¾›Ôûÿÿÿÿ
+j
+java:S1104"UMake obtenidos a static final constant or non-public and provide accessors if needed.(“ãé
+J
+java:S1444"/Make this "public static esperados" field final(Ú¾›Ôûÿÿÿÿ
+D
+java:S1444"/Make this "public static obtenidos" field final(“ãé
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(óÂ÷Ï
+8
+java:S2386"Make this member "protected".(Ú¾›Ôûÿÿÿÿ
+2
+java:S2386"Make this member "protected".(“ãé
