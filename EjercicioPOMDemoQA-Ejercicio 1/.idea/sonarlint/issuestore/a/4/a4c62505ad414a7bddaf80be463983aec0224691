@@ -1,0 +1,17 @@
+
+f
+java:S1104	"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾
+o
+java:S1104
+"TMake apellido a static final constant or non-public and provide accessors if needed.(Üêææúÿÿÿÿ
+l
+java:S1104"QMake email a static final constant or non-public and provide accessors if needed.(¾Æ†Ëıÿÿÿÿ
+t
+java:S1104"RMake gender a static final constant or non-public and provide accessors if needed.(¬­Éûÿÿÿÿ8ü•Úïí0
+m
+java:S1104"RMake mobile a static final constant or non-public and provide accessors if needed.(¿À¨Òúÿÿÿÿ
+r
+java:S1104"WMake dateOfBirth a static final constant or non-public and provide accessors if needed.(È¡ä¹şÿÿÿÿ
+n
+java:S1104"SMake subject a static final constant or non-public and provide accessors if needed.(¾¶¸Ûÿÿÿÿÿ
+c	java:S107m"BConstructor has 11 parameters, which is greater than 7 authorized.(—äİûıÿÿÿÿ8¾‰®ğí0
