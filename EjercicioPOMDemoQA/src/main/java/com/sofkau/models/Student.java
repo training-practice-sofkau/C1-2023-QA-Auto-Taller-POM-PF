@@ -2,7 +2,6 @@ package com.sofkau.models;
 
 import com.sofkau.util.Gender;
 import com.sofkau.util.Hobbies;
-import org.openqa.selenium.WebDriver;
 
 import java.util.List;
 

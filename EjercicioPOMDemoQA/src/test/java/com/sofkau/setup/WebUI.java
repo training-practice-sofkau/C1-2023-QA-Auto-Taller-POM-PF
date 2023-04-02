@@ -42,4 +42,5 @@ public class WebUI {
     private void setUplog4j (){
         PropertyConfigurator.configure(USER_DIR.value()+ LOG4J_PROPERTIES_FILE_PATH.getValue());
     }
+
 }

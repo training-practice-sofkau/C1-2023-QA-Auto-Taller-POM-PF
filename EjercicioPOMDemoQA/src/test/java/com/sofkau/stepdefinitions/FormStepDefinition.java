@@ -6,6 +6,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.jboss.logging.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class FormStepDefinition extends WebUI {
 
@@ -31,6 +36,10 @@ public class FormStepDefinition extends WebUI {
     }
     @Then("debe observar una ventana con la informacion ingresada")
     public void debeObservarUnaVentanaConLaInformacionIngresada(){
-
+        WebElement modalTitle = driver.findElement(By.xpath("//div[@id='example-modal-sizes-title-lg']"));
+        String expectedText = "Thanks for submitting the form";
+        String actualText = modalTitle.getText();
+        assertEquals(expectedText, actualText);
+        LOGGER.info("El mensaje esperado se muestra correctamente: " + actualText);
 }
 }
