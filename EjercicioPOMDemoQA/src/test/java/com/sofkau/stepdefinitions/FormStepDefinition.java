@@ -41,5 +41,8 @@ public class FormStepDefinition extends WebUI {
         String actualText = modalTitle.getText();
         assertEquals(expectedText, actualText);
         LOGGER.info("El mensaje esperado se muestra correctamente: " + actualText);
+
+        quiteDriver();
 }
-}
+
+    }

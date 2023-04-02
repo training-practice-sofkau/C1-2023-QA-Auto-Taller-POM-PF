@@ -13,7 +13,8 @@ public class FormStepDefinition extends WebUI {
 
     @Given("el administrador esta en la pagina principal")
     public void elAdministradorEstaEnLaPaginaPrincipal() {
-
+        generalSetUp();
+        LOGGER.info(" inicio de la automatizacion");
     }
     @When("navega hasta la opcion de elementos en la opcion Web tables")
     public void navegaHastaLaOpcionDeElementosEnLaOpcionWebTables() {
@@ -21,7 +22,7 @@ public class FormStepDefinition extends WebUI {
     }
     @When("completa con nombre {string}, apellido {string}, edad {string}, correo electronico {string}, salario {string}, departamento {string}")
     public void completaConNombreApellidoEdadCorreoElectronicoSalarioDepartamento(String nombre, String apellido, String edad, String correo, String salario, String departamento) {
-        System.out.println(nombre);
+
     }
     @Then("debe observar una fila con la informacion ingresada en la tabla.")
     public void debeObservarUnaFilaConLaInformacionIngresadaEnLaTabla() {

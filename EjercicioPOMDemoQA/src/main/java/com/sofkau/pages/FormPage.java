@@ -8,7 +8,6 @@ public class FormPage extends CommonActionOnPages{
     private final By name= By.id("firstName");
     private final By secondName= By.id("lastName");
     private final By email= By.id("userEmail");
-
     private final By gender= By.xpath("//label[@for='gender-radio-1']");
     private final By birth= By.id("dateOfBirthInput");
     private final By year= By.xpath("//option[@value='1996']");
@@ -27,9 +26,7 @@ public class FormPage extends CommonActionOnPages{
     public FormPage(WebDriver driver) {
         super(driver);
     }
-    protected void selectDate(By locator, String value){
-        driver.findElement(locator).sendKeys(Keys.chord(Keys.CONTROL,"a"),value,Keys.ENTER);
-    }
+
     public void fillMandatoryFields(){
         clearText(name);
         typeInto(name,"Bryan David");
