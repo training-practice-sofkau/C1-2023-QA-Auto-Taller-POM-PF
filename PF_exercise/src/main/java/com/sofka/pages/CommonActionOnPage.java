@@ -1,17 +1,14 @@
 package com.sofka.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.sikuli.script.Key;
 
 public class CommonActionOnPage {
 
-    private WebDriver driver;
+    WebDriver driver;
 
-    public CommonActionOnPages(WebDriver driver) {
+    public CommonActionOnPage(WebDriver driver) {
         this.driver = driver;
-
     }
 
     protected void typeInto(By locator, String value) {
@@ -42,5 +39,13 @@ public class CommonActionOnPage {
 
     protected void tab(By locator) {
         driver.findElement(locator).sendKeys(Key.TAB);
+    }
+    protected void click (WebElement webElement){
+        webElement.click();
+    }
+    protected void scrollToElement(By locator) {
+        WebElement element = driver.findElement(locator);
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 }

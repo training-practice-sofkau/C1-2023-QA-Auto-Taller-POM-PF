@@ -12,12 +12,8 @@ import static com.sofkau.setup.ConstantSetup.*;
 import static com.sofkau.util.Log4j.LOG4J_PROPERTIES_FILE_PATH;
 
 public class WebUI {
-    //Esta es una clase de configuracion
 
     protected WebDriver driver;
-
-
-
     private void setUpWebdriver(){
         //System.setProperty(WEBDRIVER_CHROME_DRIVER, WEBDRIVER_CHROME_DRIVER_PATH);
         WebDriverManager.chromedriver().setup();
@@ -33,7 +29,6 @@ public class WebUI {
         setUplog4j();
         setUpWebdriver();
         setUpWebdriverUrl();
-
     }
     protected void quiteDriver(){
         driver.quit();

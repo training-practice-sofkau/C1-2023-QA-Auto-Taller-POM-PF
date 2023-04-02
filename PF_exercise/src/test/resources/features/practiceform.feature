@@ -1,15 +1,17 @@
-Feature: Trabajar  como socio de Parasoft
-  yo como cliente de la web Parasoft
-  quiero dirigirme a la seccion de partners
-  para poder registrarme y trabajar con Parasoft
+Feature: Llenar formulario Web Tables
+  yo como administrador de DemoQA
+  quiero diligenciar datos en especifico en una tabla de resgitro
+  para poder validar y verificar el correcto funcionamiento de la herramienta
 
-  Scenario Outline: Registro de perfil exitoso
-    Given el cliente esta en la pagina principal
-    When navega hasta la opcion de partners en la opcion Become a Partners
-    And completa con email <email>, nombre <firstName>, apellido <lastName>, compania <company>, celular <phone>, pais <country>, comentarios <comments>
-    Then debe observar un mensaje en pantalla de envio exitoso
+  Scenario Outline: Registros exitosos en la tabla
+    Given el admin esta en la pagina principal de DemoQA
+    When navega hasta la opcion de Web Tables
+    And da click en el boton de agregar un nuevo registro
+    And completa con nombre <firstName>, apellido <lastName>, edad <age>, correo <correo>, salario <salary>, departamento <department>
+    And envia la informacion
+    Then debe observar una tabla de la informacion ingresada correctamente
     Examples:
-      | email                  | firstName | lastName | company   | phone        | country       | comments               |
-      | "lupo@gmail.com"       | "lupo"    | "mejia"  | "sofka"   | "3124569985" | "unit states" | "llamame por favor"    |
-      | "luisamaria@gmail.com" | "luisa"   | "mora"   | "avantel" | "3124785596" | "australia"   | "llamame ya"           |
-      | "cami@gmail.com"       | "camila"  | "marin"  | "claro"   | "3115002030" | "argentina"   | "llamame con urgencia" |
+      | firstName | lastName | age  | correo                 | salary     | department          |
+      | "lupo"    | "mejia"  | "49" | "lupo@gmail.com"       | "20000000" | "financiero"        |
+      | "luisa"   | "mora"   | "15" | "luisamaria@gmail.com" | "900000"   | "servicioAlCliente" |
+      | "camila"  | "marin"  | "20" | "cami@gmail.com"       | "2500000"  | "DiseñoGrafico"     |

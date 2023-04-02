@@ -21,17 +21,13 @@ public class FormPage extends CommonActionOnPages{
     private final By mobile = By.id("userNumber");
     private final By date = By.id("dateOfBirthInput");
     private final By subject = By.id("subjectsInput");
-    private final By hobbieone = By.id("hobbies-checkbox-1");
-    private final By hobbietwo = By.id("hobbies-checkbox-2");
-    private final By hobbiethree = By.id("hobbies-checkbox-3");
-
+    private final By hobbieone = By.xpath("(//label[text()='Sports'])");
     private final By addres= By.id("currentAddress");
     private final By state = By.id("react-select-3-input");
     private final By city = By.id("react-select-4-input");
     private final By btnSubmit = By.id("submit");
-
-
-
+    private final By form = By.xpath("(//div[@class='avatar mx-auto white'])[2]");
+    private final By practiceForm = By.xpath("(//span[text()='Practice Form'])");
 
 
     //funciones creadas
@@ -40,14 +36,13 @@ public class FormPage extends CommonActionOnPages{
         this.e=e;
     }
 
-    /**public void clickForm() throws InterruptedException {
+    public void clickForm() throws InterruptedException {
+        scroll(form);
         click(form);
         Thread.sleep(2000);
+        scroll(practiceForm);
         click(practiceForm);
-
-    }**/
-
-
+    }
 
     public void fillMandatoryFields(){
     clearText(name);
@@ -58,7 +53,7 @@ public class FormPage extends CommonActionOnPages{
 
     typeInto(email,e.getEmail());
 
-    switch (e.getGender()) {
+        switch (e.getGender()) {
             case FEMALE:
                 click(genderFemale);
                 break;
@@ -69,7 +64,7 @@ public class FormPage extends CommonActionOnPages{
                 click(genderOther);
                 break;
             default:
-    }
+        }
 
     clearText(mobile);
 
@@ -77,13 +72,12 @@ public class FormPage extends CommonActionOnPages{
 
     selectDate(date, e.getDate());
 
-
     typeInto(subject,e.getSubject());
-    tab(subject);
 
-    pressSpace(hobbieone);
-    pressSpace(hobbietwo);
-    pressSpace(hobbiethree);
+    tab(subject);
+    scroll(hobbieone);
+
+    click(hobbieone);
 
     clearText(addres);
     typeInto(addres,e.getCurrentAddres());

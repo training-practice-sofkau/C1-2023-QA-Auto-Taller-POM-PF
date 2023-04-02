@@ -12,7 +12,6 @@ public class Estudiante {
     private String mobile;
     private Gender gender;
     private Hobbies hobbies;
-
     private String date;
     private String  subject;
     private String picture;
