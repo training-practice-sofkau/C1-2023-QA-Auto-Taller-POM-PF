@@ -1,9 +1,9 @@
 package com.sofkau.pages;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class FormPage extends CommonActionOnPages{
+
     private WebDriver driver;
     private final By name= By.id("firstName");
     private final By secondName= By.id("lastName");

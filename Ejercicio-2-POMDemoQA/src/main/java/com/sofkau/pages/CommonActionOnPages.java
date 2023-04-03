@@ -1,11 +1,9 @@
 package com.sofkau.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 
 public class CommonActionOnPages {
-    private WebDriver driver;
+    WebDriver driver;
 
     public CommonActionOnPages(WebDriver driver) {
         this.driver = driver;
@@ -19,12 +17,16 @@ public class CommonActionOnPages {
         driver.findElement(locator).clear();
     }
 
-    public void click(By locator){
-        driver.findElement(locator).click();
-    }
     protected void pressEnter(By locator) {
 
         driver.findElement(locator).sendKeys(Keys.ENTER);
     }
-
+    protected void click (WebElement webElement){
+        webElement.click();
+}
+    protected void scrollToElement(By locator) {
+        WebElement element = driver.findElement(locator);
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+        jsExecutor.executeScript("arguments[0].scrollIntoView(true);",element);
+}
 }
